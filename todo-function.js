@@ -14,7 +14,6 @@ const completeTodo = () => {
   for (let i = 0; i < items.length; i++) {
     items[i].onclick = function() {
       const todo = todos.find(todo => {
-        //not a best practice, but okay wkw
         return todo.text == this.textContent;
       });
       todo.completed = !todo.completed;
